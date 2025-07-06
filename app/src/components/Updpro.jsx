@@ -48,7 +48,7 @@ function Updpro () {
             {/* <label>username</label> */}
             <input onChange={change}placeholder="Create username" type="text" name="username" value={form.username}/>
             {/* <label>email</label> */}
-            <input onChange={change}placeholder="Enter email" type="email" name="email" value={form.email}/>
+            <input onChange={change}placeholder="📧 Enter email" type="email" name="email" value={form.email}/>
             {/* <label>PhoneNumber</label> */}
             <input onChange={change}placeholder="Enter phonenumber" type="tel" name="phoneNum" value={form.phoneNum} />
             {/* <label>Gender</label> */}

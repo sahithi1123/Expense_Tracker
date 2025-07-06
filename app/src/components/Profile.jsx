@@ -27,7 +27,7 @@ function Profile()
         <div>
         <div className="profile-wrapper">
   <div className="profile-card">
-    <h2>User Profile</h2>
+    <h2>👤 User Profile</h2>
       <div>
         <p><strong>First Name:</strong>  {profile?.firstName}</p>
         <p><strong>Last Name:</strong> {profile?.lastName}</p>

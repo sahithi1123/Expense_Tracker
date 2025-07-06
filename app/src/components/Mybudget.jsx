@@ -35,13 +35,15 @@ function Mybudget() {
     }
     return (
         <>
-        <h2>Budget list</h2>
+         <h2 style={{textAlign:"center",marginTop:"1rem",fontSize:"2rem"}}>💰 Budget list</h2>
+         <div style={{padding:"5rem"}}>
         <table border="2">
             <thead>
                 <tr>
                     <th>Id</th>
                     <th>Amount</th>
                     <th>Month</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -53,7 +55,7 @@ function Mybudget() {
                         <td>{s.amount}</td>
                         <td>{s.month}</td>
                         <td>
-                            <button onClick={() => del(s.id)}>Delete</button>
+                            <button className='actionButton' onClick={() => del(s.id)}>Delete</button>
                         </td>
                     </tr>
                     );
@@ -61,10 +63,11 @@ function Mybudget() {
                 }
             </tbody>
         </table>
-        <div style={{marginTop:"10px"}}>
-                <button onClick={() => setPage((p) => Math.max(p-1,0))} disabled={page==0}>prev</button>
+        </div>
+       <div style={{marginTop:"10px", display:"flex",alignItems:"center",justifyContent:"center"}}>
+                <button style={{backgroundColor:"#fff",padding:"4px" }} onClick={() => setPage((p) => Math.max(p-1,0))} disabled={page==0}>prev</button>
                 <span style={{marginTop:"0 10px"}}>Page:{page+1}</span>
-                <button onClick={() => setPage((p) => p+1)} disabled={totalpages-1==page}>Next</button>
+                <button  style={{backgroundColor:"#fff",padding:"4px" }} onClick={() => setPage((p) => p+1)} disabled={totalpages-1==page}>Next</button>
         </div>
 
         </>

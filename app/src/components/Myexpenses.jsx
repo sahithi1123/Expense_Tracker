@@ -45,7 +45,8 @@ function Myexpenses() {
     }
     return (
         <>
-        <h2>Expenses list</h2>
+        <h2 style={{textAlign:"center",marginTop:"1rem",fontSize:"2rem"}}>Expenses list</h2>
+        <div style={{padding:"3rem"}}>
         <table border="2">
             <thead>
                 <tr>
@@ -54,6 +55,7 @@ function Myexpenses() {
                     <th>Category</th>
                     <th>Date</th>
                     <th>Description</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -67,8 +69,8 @@ function Myexpenses() {
                         <td>{s.date}</td>
                         <td>{s.description}</td>
                         <td>
-                            <button onClick={() => del(s.id)}>Delete</button>
-                            <button onClick={() => update(s)}>Update</button>
+                            <button className='actionButton' onClick={() => del(s.id)}>Delete</button>
+                            <button className='actionButton' onClick={() => update(s)}>Update</button>
                         </td>
                     </tr>
                     );
@@ -76,10 +78,11 @@ function Myexpenses() {
                 }
             </tbody>
         </table>
-        <div style={{marginTop:"10px"}}>
-                <button onClick={() => setPage((p) => Math.max(p-1,0))} disabled={page==0}>prev</button>
+        </div>
+        <div style={{marginTop:"10px", display:"flex",alignItems:"center",justifyContent:"center"}}>
+                <button style={{backgroundColor:"#fff",padding:"4px" }} onClick={() => setPage((p) => Math.max(p-1,0))} disabled={page==0}>prev</button>
                 <span style={{marginTop:"0 10px"}}>Page:{page+1}</span>
-                <button onClick={() => setPage((p) => p+1)} disabled={totalpages-1==page}>Next</button>
+                <button  style={{backgroundColor:"#fff",padding:"4px" }} onClick={() => setPage((p) => p+1)} disabled={totalpages-1==page}>Next</button>
         </div>
 
         </>

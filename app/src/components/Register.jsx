@@ -33,7 +33,7 @@ function Register() {
         <>
         <div className="page-section">
             <div className="home-card">
-            <h2>Register</h2>
+            <h2>📝 Register</h2>
             <div className="home-container">
         {/* <p>username:{form.username}</p>
          <p>email:{form.email}</p>
@@ -46,9 +46,9 @@ function Register() {
             {/* <label>username</label> */}
             <input onChange={change}placeholder=" Create username" type="text" name="username"/>
             {/* <label>email</label> */}
-            <input onChange={change}placeholder="Enter email" type="email" name="email"/>
+            <input onChange={change}placeholder="📧 Enter email" type="email" name="email"/>
             {/* <label>password</label> */}
-            <input onChange={change}placeholder="Create password" type="password" name="password"/>
+            <input onChange={change}placeholder="🔒 Create password" type="password" name="password"/>
             {/* <label>PhoneNumber</label> */}
             <input onChange={change}placeholder="Enter phonenumber" type="tel" name="phoneNum"/>
             {/* <label>Gender</label> */}

@@ -30,7 +30,7 @@ function BudgetAdd() {
         <>
         <div className="page-section">
             <div className="home-card">
-            <h2>Welcome to budget page</h2>
+            <h2>💰 Welcome to budget page</h2>
             <div className="home-container">
                  
         <form onSubmit={submit}>

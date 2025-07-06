@@ -43,9 +43,9 @@ function ForgetPass(){
         {/* <p>email:{form.email}</p>
         <p>password:{form.password}</p> */}
         <form onSubmit={submit}>
-            <input onChange={change} type="email" name="email" placeholder="enter email"/>
-            <input onChange={(e)=>{setnpsw(e.target.value)}} type="password" name="new password" placeholder="enter newpassword"/>
-            <input onChange={(e)=>{setcpsw(e.target.value)}} type="password" name="confirm password" placeholder="again enter password"/>
+            <input onChange={change} type="email" name="email" placeholder="📧 enter email"/>
+            <input onChange={(e)=>{setnpsw(e.target.value)}} type="password" name="new password" placeholder="🔒 enter newpassword"/>
+            <input onChange={(e)=>{setcpsw(e.target.value)}} type="password" name="confirm password" placeholder="🔒 again enter password"/>
             <button type="submit">Update</button>
         </form>
         </div>

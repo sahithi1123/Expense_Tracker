@@ -45,15 +45,15 @@ function Update () {
             <input onChange={change} name="amount" type="number" step="0.01" placeholder="Enter amount" value={form.amount}/>
             {/* <label>category</label> */}
              <select name="category" value={form.category} onChange={change}>
-                <option value="food">food</option>
-                <option value="rent">rent</option>
-                <option value="Utilities">Utilities</option>
-                <option value="Groceries">Groceries</option>
-                <option value="Transportation">Transportation</option>
-                <option value="Insurance">Insurance	</option>
-                <option value="Medical">Medical</option>
-                <option value="Loan Payments">Loan Payments	</option>
-                <option value="others">others</option>
+                <option value="food">🍔 Food</option>
+                <option value="rent">🏠 Rent</option>
+                <option value="Utilities">💡 Utilities</option>
+                <option value="Groceries">🛒 Groceries</option>
+                <option value="Transportation">🚗 Transportation</option>
+                <option value="Insurance">🛡️ Insurance</option>
+                <option value="Medical">💊 Medical</option>
+                <option value="Loan Payments">💸 Loan Payments</option>
+                <option value="others">📁 Others</option>
             </select>
             {/* <label>date</label> */}
             <input onChange={change}placeholder="select date" type="date" name="date" value={form.date} max={today} />  

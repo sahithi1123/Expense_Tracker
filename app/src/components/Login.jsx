@@ -32,7 +32,7 @@ function Login() {
         <>
         <div className="page-section">
             <div className="home-card">
-            <h2>Login</h2>
+            <h2>🔐 Login</h2>
             <div className="home-container">
         <form onSubmit={submit}>
             {/* <p>email:{form.email}</p>
@@ -40,9 +40,9 @@ function Login() {
             {message && (<p style={{ color: message.toLowerCase().includes("success") ? "green" : "red" }}>
                     {message}</p>)}
             {/* <label>email</label> */}
-            <input onChange={change}placeholder="email" type="email" name="email"/>   
+            <input onChange={change}placeholder="📧 email" type="email" name="email"/>   
             {/* <label>password</label>          */}
-            <input onChange={change}placeholder="password" type="password" name="password"/>
+            <input onChange={change}placeholder="🔒 password" type="password" name="password"/>
             <button type="submit">login</button><br/>
              <div className="link-row">
                 <a href="/reg">Sign up</a>

@@ -9,7 +9,7 @@
 html, body {
   height: 100%;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #6b5b95, #878f99);
+background: linear-gradient(to right, #6b5b95, #878f99);
   color: #fff;
   line-height: 1.5;
 }
@@ -70,7 +70,8 @@ body * {
 .home-container input[type="password"],
 .home-container input[type="tel"],
 .home-container input[type="number"],
-.home-container input[type="date"], /* ✅ Number field included */
+.home-container input[type="date"],
+.home-container input[type="year"], /* ✅ Number field included */
 .home-container select {
   width: 100%;
   padding: 12px 14px;
@@ -223,7 +224,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 25px;
-  background-color: white;
+  background-color: #d9d0f0;
   color: #333;
   border-radius: 6px;
   overflow: hidden;
@@ -244,7 +245,7 @@ th {
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #ede9f5;
 }
 
 /* =====================
@@ -254,7 +255,7 @@ tr:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right, #6b5b95, #878f99);
+  background: linear-gradient(to right, #230141, #cd97fd);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -305,7 +306,7 @@ tr:hover {
   flex: 1;
   padding: 50px;
   color: white;
-  background: linear-gradient(to right, #6b5b95, #878f99); /* match background */
+  /* background: linear-gradient(to right, #6b5b95, #878f99); match background */
 }
 
 .main-dashboard-content h1 {
@@ -316,7 +317,7 @@ tr:hover {
 /* Sidebar */
 .dashboard-sidebar {
   width: 220px;
-  background-color: #7c6fa3; /* soft violet-grey */
+  background-color: #4a0575; /* soft violet-grey */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -500,6 +501,15 @@ tr:hover {
   .home-buttons {
     justify-content: center;
   }
+}
+
+.actionButton{
+  padding: 0.35rem;
+  margin-left: 0.5rem !important;
+  background-color: #956cfc;
+  border-radius: 10px;
+  color: #fff;
+  border: none;
 }
 
 

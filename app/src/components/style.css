@@ -1,0 +1,505 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Setup */
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #6b5b95, #878f99);
+  color: #fff;
+  line-height: 1.5;
+}
+
+body * {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* =====================
+   BACKGROUND SECTION
+===================== */
+.page-section {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #6b5b95, #878f99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px; /* Slightly smaller padding */
+}
+
+/* =====================
+   CARD (Reduced Width)
+===================== */
+.home-card {
+  background-color: #ffffff;
+  padding: 30px 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 360px; /* ✅ Reduced from 500px */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =====================
+   HEADING
+===================== */
+.home-card h2 {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: #6b5b95;
+}
+
+/* =====================
+   FORM ELEMENTS
+===================== */
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-container input[type="text"],
+.home-container input[type="email"],
+.home-container input[type="password"],
+.home-container input[type="tel"],
+.home-container input[type="number"],
+.home-container input[type="date"], /* ✅ Number field included */
+.home-container select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid #cea2f7;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f5f3f5;
+  transition: all 0.3s ease;
+  color:#000000;
+}
+
+.home-container input:hover,
+.home-container select:hover {
+  border-color: #8d7dbd;
+  background-color: #b8b1f1;
+}
+
+.home-container input:focus,
+.home-container select:focus {
+  border-color: #6b5b95;
+  background-color: #fdfcff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 91, 149, 0.25);
+}
+
+/* Checkbox Group Container */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Common Input/Select Styling */
+input[type="date"],
+input[type="password"],
+select[name="category"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  color: #333;
+  font-family: inherit;
+}
+
+/* Hover Effect */
+input[type="date"]:hover,
+input[type="password"]:hover,
+select[name="category"]:hover {
+  border-color: #8d7dbd;
+  background-color: #f0eefd;
+}
+
+/* Focus Effect */
+input[type="date"]:focus,
+input[type="password"]:focus,
+select[name="category"]:focus {
+  border-color: #6b5b95;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 91, 149, 0.25);
+}
+
+/* Optional: Placeholder color for password input */
+input[type="password"]::placeholder,
+input[type="date"]::placeholder {
+  color: #aaa;
+}
+
+select[name="gender"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  color: #333;
+  font-family: inherit;
+}
+
+/* Hover Effect */
+select[name="gender"]:hover {
+  border-color: #8d7dbd;
+  background-color: #f0eefd;
+}
+
+/* Focus Effect */
+select[name="gender"]:focus {
+  border-color: #6b5b95;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 91, 149, 0.25);
+}
+
+
+
+/* =====================
+   BUTTON
+===================== */
+.home-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6b5b95;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.home-container button:hover {
+  background-color: #554a7d;
+}
+
+.link-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.link-row a {
+  color: #6b5b95;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link-row a:hover {
+  text-decoration: underline;
+  color: #554a7d;
+}
+
+
+/* =====================
+   TABLE STYLING
+===================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background-color: white;
+  color: #333;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #6b5b95;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(to right, #6b5b95, #878f99);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 30px;
+  z-index: 999;
+}
+
+.nav-left h2 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}
+
+.navbar .nav-left a,
+.navbar .nav-right a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-right .logout {
+  background-color: #e75454; /* softer red for logout */
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   DASHBOARD LAYOUT
+===================== */
+.dashboard-container {
+  display: flex;
+  padding-top: 70px; /* below navbar */
+  height: calc(100vh - 70px);
+}
+
+.main-dashboard-content {
+  flex: 1;
+  padding: 50px;
+  color: white;
+  background: linear-gradient(to right, #6b5b95, #878f99); /* match background */
+}
+
+.main-dashboard-content h1 {
+  font-size: 34px;
+  color: #fff;
+}
+
+/* Sidebar */
+.dashboard-sidebar {
+  width: 220px;
+  background-color: #7c6fa3; /* soft violet-grey */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: fixed;
+  right: 0;
+  top: 70px;
+  bottom: 0;
+}
+
+.dashboard-sidebar button,
+.dashboard-sidebar a {
+  background-color: #5e548e;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboard-sidebar button:hover,
+.dashboard-sidebar a:hover {
+  background-color: #4e457a;
+}
+
+/* Smaller Sidebar Icons */
+.dashboard-sidebar svg,
+.dashboard-sidebar i {
+  width: 14px;
+  height: 14px;
+  font-size: 14px;} 
+
+
+/* Wrapper to center the profile card in full screen */
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full screen height */
+  background: linear-gradient(to right, #6b5b95, #878f99);
+  padding: 20px;
+}
+
+/* Card container */
+.profile-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  max-width: 500px;
+  width: 100%;
+  color: #333;
+}
+
+/* Heading */
+.profile-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 26px;
+  color: #6b5b95;
+}
+
+/* Profile details */
+.profile-card p {
+  font-size: 16px;
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+.profile-card strong {
+  color: #444;
+}
+
+/* Update Button */
+.profile-card button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 24px;
+  background-color: #6b5b95;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card button:hover {
+  background-color: #554a7d;
+}
+
+/* =====================
+   HOME PAGE
+===================== */
+
+.welcome-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(to right, #6b5b95, #878f99);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.welcome-card {
+  background: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-text {
+  flex: 1;
+}
+
+.welcome-text h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-buttons button {
+  background-color: #6b5b95;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-buttons button:hover {
+  background-color: #554a7d;
+}
+
+/* Image Section */
+.welcome-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .welcome-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+}
+
+

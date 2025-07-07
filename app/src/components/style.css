@@ -255,7 +255,7 @@ tr:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(to right, #230141, #cd97fd);
+  background: linear-gradient(to right, #230141, rgb(77, 5, 141));
   color: white;
   display: flex;
   justify-content: space-between;
@@ -317,7 +317,7 @@ tr:hover {
 /* Sidebar */
 .dashboard-sidebar {
   width: 220px;
-  background-color: #4a0575; /* soft violet-grey */
+  background:linear-gradient(to right, #230141, rgb(77, 5, 141)); /* soft violet-grey */
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -512,4 +512,49 @@ tr:hover {
   border: none;
 }
 
+.back-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #6b5b95;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #594c8d;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 80px auto 40px;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+.about-container h1 {
+  font-size: 32px;
+  color: #6b5b95;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-container p {
+  text-align: justify;
+}
 

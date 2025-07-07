@@ -45,6 +45,7 @@ function Myexpenses() {
     }
     return (
         <>
+        <button className='back-button' onClick={()=>{nav('/mid')}}>←Back</button>
         <h2 style={{textAlign:"center",marginTop:"1rem",fontSize:"2rem"}}>Expenses list</h2>
         <div style={{padding:"3rem"}}>
         <table border="2">

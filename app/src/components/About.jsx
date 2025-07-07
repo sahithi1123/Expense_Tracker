@@ -1,6 +1,7 @@
 function About() {
   return (
     <>
+     <div className="about-container">
     <h1>About</h1>
     <p>Smart Expense Tracker is a user-friendly web application designed to help individuals manage their 
         personal finances more effectively. It allows users to securely register and log in to track their 
@@ -11,6 +12,7 @@ function About() {
         alerts, the system encourages users to stay within their spending limits and make informed financial decisions.
         Built using React for the frontend and Spring Boot for the backend, Smart Expense Tracker ensures a seamless
         and responsive experience across devices.</p>
+        </div>
     </>
   )
 }

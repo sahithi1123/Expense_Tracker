@@ -18,7 +18,6 @@ import Middle from './components/Middle';
 import Updpro from './components/Updpro';
 import BudgetAdd from './components/BudgetAdd';
 import About from './components/About';
-import Chat from './components/Chat';
 import Insights from './components/OverallInsights';
 import OverallInsights from './components/OverallInsights';
 import MonthlyInsights from './components/MonthlyInsights';
